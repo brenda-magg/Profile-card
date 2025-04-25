@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,40..300&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --DarkCyan: hsl(185, 75%, 39%);
+    --VeryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --DarkGrayishBlue: hsl(227, 10%, 46%);
+    --DarkGray: hsl(0, 0%, 59%);
+    --White: hsl(0, 0%, 100%); 
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--DarkGrayishBlue);
+    background-color: var(--DarkCyan);
+    /* max-width: 1920px; */
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-size: auto, auto;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: calc(50% + -27em) calc(50% + -27em), calc(50% - -28em) calc(50% - -32.6em);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: var(--White);
+    width: 25em;
+    margin-top: 10em;
+    border-radius: .85em;
+    overflow: hidden;
+    text-align: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.banner {
+    margin: auto;
+    width: 25em;
+}
+
+
+.victor {
+    margin-inline: auto;
+    border-radius: 5em;
+    display: block;
+    position: relative;
+    border: 4px solid var(--White);
+    top: -52px;
+}
+
+.victor-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.7em;
+    position: relative;
+    top: -30px;
+}
+
+h1 {
+    color: var(--VeryDarkDesaturatedBlue);
+    font-weight: 800;
+    font-size: 1.12em;
+}
+
+p.age {
+    color: var(--DarkGray);
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.city {
+    color: var(--DarkGray);
+    text-align: center;
+    position: relative;
+    top: -24px;
+    font-size: 0.97em;
+}
+
+hr {
+    border: none;
+    width: 100%;
+    height: 1px;
+    background-color: hsl(0, 0%, 87%);
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5em;
+    margin: 1.5em;
+}
+
+.stat-data {
+    margin-right: 1em;
+}
+
+.stat-num {
+    color: var(--VeryDarkDesaturatedBlue);
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.stat-desc {
+    font-size: 0.6em;
+    letter-spacing: 0.2em;
+}
+.attribution {
+    text-align: center;
+    margin-top: 3em;
+}
+
+@media only screen and (max-width: 450px) {
+    .container {
+        width: 22em;
+    }
+
+    .stats {
+        gap: 1em;
+    }
+}
